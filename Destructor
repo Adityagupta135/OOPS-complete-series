@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class customer
+{ 
+    string name;
+    int *data;
+
+    public:
+    //constructor
+    customer()
+    {
+    cout<<"constructor is called"<<endl;
+    }
+
+    //destructor :- it creates only one time.
+    ~customer()
+    {
+cout<<"Destructor is called";
+    }
+
+};
+
+int main()
+{
+    customer A1;
+}
