@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+
+
+class customer                                     // customer is the name of class
+{
+    string name;
+    int account_number, balance;
+
+
+    //default constructor
+public:                                  // access modifier
+    customer()
+    {
+name = "Rohit";
+account_number = 123;
+balance = 1000;
+    }
+
+
+    // parameterized constructor
+    customer(string a, int b, int c)
+    {
+        name=a;
+        account_number=b;
+        balance=c;
+
+    }
+
+
+
+//constructor overloading
+    customer(string a, int b)
+    {
+        name = a;
+        account_number=b;
+    }
+
+
+    //inline constructor
+
+    // inline customer(string a, int b, int c):name(a), account_number(b), balance(c)
+    // {
+        
+    // }
+
+    void display()
+    {
+        cout<<name<<" "<<account_number<<" "<<balance<<endl;
+    }
+};
+
+int main()
+{
+  customer A1;
+  customer A2("Rohit", 23, 1000);
+  customer A3("Mohit",10);
+  A1.display();
+  A2.display();
+  A3.display();
+}
