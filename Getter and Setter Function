@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class student          // here student is the name of class and class is a keyword.
+{
+    private:                        // access modifier
+     string name;
+    int age, roll_number;
+    string grade;
+
+
+
+//getter and setter function
+public:                             // access modifier
+    void setname(string n)
+    {
+        name =n;
+    }
+
+    void getname()
+    {
+        cout<<name<<endl;
+    }
+};
+
+int main()
+{
+
+    student s1;
+
+    s1.setname("Rohit");
+    s1.getname();
+}
