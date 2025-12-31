@@ -1,0 +1,31 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+
+int main()
+{
+    
+
+    ifstream fin;
+
+
+    //open the file
+
+    fin.open("Zoom.txt");  
+    
+    
+    //read the file
+   char c;
+   fin>>c;
+
+   while(!fin.eof())
+   {
+      cout<<c;
+      fin>>c;
+
+   }
+    
+    fin.close();  //Resources Release
+}
