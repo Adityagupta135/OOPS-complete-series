@@ -1,0 +1,18 @@
+#include<iostream>
+#include<fstream>
+
+using namespace std;
+
+
+int main()
+{
+    //open the file
+
+    ofstream fout;
+
+    fout.open("Zoom.txt");  //create the file and open the file
+    fout<<"Hello India"<<endl;
+
+    
+    fout.close();     //Resources Release
+}
