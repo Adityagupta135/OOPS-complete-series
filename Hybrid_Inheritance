@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+
+
+// student boy girl male female
+
+class student
+{
+    public:
+    void print()
+    {
+        cout<<"I am student\n"<<endl;
+    }
+};
+
+
+class Male 
+ {
+    public:
+    void maleprint()
+    {
+        cout<<"I am male\n"<<endl;
+    }
+};
+
+
+class Female 
+ {
+    public:
+    void Femaleprint()
+    {
+        cout<<"I am Female"<<endl;
+    }
+};
+
+
+class boy : public student, public Male
+{
+    public:
+    void boysprint()
+    {
+      cout<<"I am boy\n"<<endl;
+    }
+
+};
+
+
+class girl : public student, public Female
+{
+    public:
+    void girlsprint()
+    {
+cout<<"I am girl"<<endl;
+    }
+ };
+
+
+
+int main()
+{
+    girl G1;
+    G1.girlsprint();
+
+    boy b1;
+    b1.maleprint();
+}
