@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+//They are attributes of classes or class member
+class customer
+{
+  string name;
+  int account_number, balance;
+  static int total_customer;      //only one-time create 
+
+  public:
+
+  customer(string a, int b, int c)
+  {
+    name=a;
+    account_number=b;
+    balance=c;
+    total_customer++;;
+  }
+
+
+  void display()
+  {
+
+cout<<name<<" "<< account_number<<" "<<balance<<" "<<total_customer<<endl;
+  }
+
+};
+
+int customer::total_customer=0;      //resolution operator
+
+int main()
+{
+customer A1("Rohit",1,1000);
+customer A2("Mohit",2,1800);
+A1.display();
+A2.display();
+customer A3("Mohan",3,2000);
+A3.display();
+
+}
