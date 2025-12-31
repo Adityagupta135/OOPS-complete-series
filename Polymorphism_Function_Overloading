@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class Area
+{
+    public:
+
+  int  Calculatearea(int r)    // circle
+    {
+        return 3.14*r*r;
+    }
+
+
+  int Calculatearea(int l, int b)   // rectangle
+  
+  {
+    return l*b;
+  }
+};
+
+
+int main()
+{
+    Area A1,A2;
+    cout<<A1.Calculatearea(4)<<endl;
+    cout<<A2.Calculatearea(3,4)<<endl;
+}
